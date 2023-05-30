@@ -24,8 +24,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class TestScenario2_Edge {
-	public String username="priyanka.samantaray";
-	public String accesskey = "ucwMAhA9E8vrTAKr1mbNrB9RKoITpCAClOd3uVZXLmYmzlt7za";
+	public String username="";
+	public String accesskey = "";
 	public RemoteWebDriver driver;
 	public String gridURL = "hub.lambdatest.com";
 	String status;
@@ -51,7 +51,7 @@ public class TestScenario2_Edge {
 
 		try
         {
-            driver = new RemoteWebDriver(new URL("https://" + "priyanka.samantaray" + ":" + "ucwMAhA9E8vrTAKr1mbNrB9RKoITpCAClOd3uVZXLmYmzlt7za" + "@hub.lambdatest.com/wd/hub"), caps);
+            driver = new RemoteWebDriver(new URL("https://" + username + ":" + accesskey + "@hub.lambdatest.com/wd/hub"), caps);
         
         
         }
